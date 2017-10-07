@@ -6,6 +6,7 @@
 #include "CardDispenser.h"
 #include "RR10.h"
 #include "SL015M.h"
+#include "VirtualReader.h"
 #include "Ddr.h"
 
 
@@ -78,8 +79,10 @@ Ddr nod3;
 
 #if RFID_MODULE1 == 1
 SL015M mod1;
-#else
+#elif RFID_MODULE1 == 2
 RR10 mod1;
+#elif RFID_MODULE1 == 3
+VirtualReader mod1;
 #endif
 
 
@@ -88,8 +91,10 @@ RR10 mod1;
 #if GAMETYPE == 2 || GAMETYPE == 5
 #if RFID_MODULE2 == 1
 SL015M mod2;
-#else
-RR10 mod2;
+#elif RFID_MODULE1 == 2
+RR10 mod1;
+#elif RFID_MODULE1 == 3
+VirtualReader mod1;
 #endif
 #endif
 

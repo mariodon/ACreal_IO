@@ -5,6 +5,10 @@ ACreal IO is a firmware code for Arduino to build Konami ACIO compatible boards.
 Konami ACIO is a protocol used for communication between arcade games and harware components such as e-Amusement readers.
 Its uses rs232 and allows several "nodes" to be connected a single serial port.
 
+About this Fork
+-------------
+This fork adds a virtual card reader. It is necessary to connect a pushbutton to the card reader pin.
+
 Games support
 -------------
 Currently this project supports the following games :
